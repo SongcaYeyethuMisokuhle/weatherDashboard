@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d6ec87a646a263ef042141158ea26698 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d6ec87a646a263ef042141158ea26698" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d6ec87a646a263ef042141158ea26698 = L.map(
+                "map_d6ec87a646a263ef042141158ea26698",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ef3452d6d5c5d7a6ed2a575fe4329ef1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ef3452d6d5c5d7a6ed2a575fe4329ef1.addTo(map_d6ec87a646a263ef042141158ea26698);
+        
+    
+            var circle_marker_2dff5ee723e9435897213df256b9b82c = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d6ec87a646a263ef042141158ea26698);
+        
+    
+        var popup_a042095cfd9368e5a9374e25898f9bdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c118c8e45d3f0fbac2bd883fc6df2f8d = $(`<div id="html_c118c8e45d3f0fbac2bd883fc6df2f8d" style="width: 100.0%; height: 100.0%;">New York: Population 8419600</div>`)[0];
+                popup_a042095cfd9368e5a9374e25898f9bdf.setContent(html_c118c8e45d3f0fbac2bd883fc6df2f8d);
+            
+        
+
+        circle_marker_2dff5ee723e9435897213df256b9b82c.bindPopup(popup_a042095cfd9368e5a9374e25898f9bdf)
+        ;
+
+        
+    
+    
+            var circle_marker_5ca84290d275273f25e2f37c7af5c2af = L.circleMarker(
+                [35.6762, 139.6503],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d6ec87a646a263ef042141158ea26698);
+        
+    
+        var popup_95b14f2cff9bf15ecfe4e1f6b26ceb27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d55e874587976b31929c4413c3f6d330 = $(`<div id="html_d55e874587976b31929c4413c3f6d330" style="width: 100.0%; height: 100.0%;">Tokyo: Population 13929286</div>`)[0];
+                popup_95b14f2cff9bf15ecfe4e1f6b26ceb27.setContent(html_d55e874587976b31929c4413c3f6d330);
+            
+        
+
+        circle_marker_5ca84290d275273f25e2f37c7af5c2af.bindPopup(popup_95b14f2cff9bf15ecfe4e1f6b26ceb27)
+        ;
+
+        
+    
+    
+            var circle_marker_39c9f2ec69d7e59c1a422c67855f5905 = L.circleMarker(
+                [51.5074, -0.1278],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d6ec87a646a263ef042141158ea26698);
+        
+    
+        var popup_75683bb5e71b0bc6ccb0e38c7f9fb96f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c96472d513d6081ac0590dbdeba37690 = $(`<div id="html_c96472d513d6081ac0590dbdeba37690" style="width: 100.0%; height: 100.0%;">London: Population 8982000</div>`)[0];
+                popup_75683bb5e71b0bc6ccb0e38c7f9fb96f.setContent(html_c96472d513d6081ac0590dbdeba37690);
+            
+        
+
+        circle_marker_39c9f2ec69d7e59c1a422c67855f5905.bindPopup(popup_75683bb5e71b0bc6ccb0e38c7f9fb96f)
+        ;
+
+        
+    
+    
+            var circle_marker_e960849940fd820826d93967dbb00763 = L.circleMarker(
+                [48.8566, 2.3522],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_d6ec87a646a263ef042141158ea26698);
+        
+    
+        var popup_6dbcf8cb57af470b811834e9009ac502 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82a9dd58cc6f03e21d4845b1505458f4 = $(`<div id="html_82a9dd58cc6f03e21d4845b1505458f4" style="width: 100.0%; height: 100.0%;">Paris: Population 2148327</div>`)[0];
+                popup_6dbcf8cb57af470b811834e9009ac502.setContent(html_82a9dd58cc6f03e21d4845b1505458f4);
+            
+        
+
+        circle_marker_e960849940fd820826d93967dbb00763.bindPopup(popup_6dbcf8cb57af470b811834e9009ac502)
+        ;
+
+        
+    
+</script>
+</html>
